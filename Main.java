@@ -5,20 +5,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // get the language
 
         System.out.println("Enter the language");
         System.out.println("Available languages: are 1. English 2. Hindi ");
 
-        // now ask in the language hindi
         System.out.println("भाषा दर्ज करें");
         System.out.println("उपलब्ध भाषाएं हैं 1. अंग्रेज़ी 2. हिंदी");
 
 
-        // take int input from user
         int language = scanner.nextInt();
 
-        // set the language
         if (language == 1) {
             Locale.setDefault(new Locale("en", "US"));
         } else if (language == 2) {
