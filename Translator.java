@@ -9,21 +9,15 @@ public class Translator {
 
     public static String translate(String key) {
 
+        System.out.println("messages_" + Locale.getDefault().getLanguage() + "_" + Locale.getDefault().getCountry() + ".properties");
+
         try {
             properties.load(new FileInputStream("messages_" + Locale.getDefault().getLanguage() + "_" + Locale.getDefault().getCountry() + ".properties"));
         } catch (IOException e) {
 
-            System.out.print("");
+            System.out.println("No messages found for " + Locale.getDefault().getLanguage() + "_" + Locale.getDefault().getCountry());
 
 
-        }
-
-        try {
-                        properties.load(new FileInputStream("messages_en_US.properties"));
-        } catch (IOException e) {
-
-            // pass
-            System.out.println("No messages found for en_US");
         }
 
 
