@@ -9,7 +9,7 @@ public class Translator {
 
     public static String translate(String key) {
 
-        System.out.println("messages_" + Locale.getDefault().getLanguage() + "_" + Locale.getDefault().getCountry() + ".properties");
+        // System.out.println("messages_" + Locale.getDefault().getLanguage() + "_" + Locale.getDefault().getCountry() + ".properties");
 
         try {
             properties.load(new FileInputStream("messages_" + Locale.getDefault().getLanguage() + "_" + Locale.getDefault().getCountry() + ".properties"));
